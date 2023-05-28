@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <h1 class="nav__title">Where in the world?</h1>
+        <button class="nav__button">
+          Dark Mode
+        </button>
+      </div>
+    </nav>
+    <header>
+      <div class="form container">
+        <input type="text" id="searchInput" placeholder="Поиск..." />
+        <!-- <select id="regionFilter">
+        <option value="default">Все регионы</option>
+        <option value="Europe">Европа</option>
+        <option value="Asia">Азия</option>
+        <option value="Africa">Африка</option>
+      </select> -->
+        <select name="regiion" id="select">
+          <option value="region" selected disabled>Filter by Region</option>
+          <option value="africa">Africa</option>
+          <option value="amerika">Amerika</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </div>
+      <div class="cardContainer" id="cardContainer"></div>
+    </header>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
